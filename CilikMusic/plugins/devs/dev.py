@@ -161,7 +161,7 @@ async def forceclose_command(_, CallbackQuery):
 
 @app.on_message(
     filters.command("link")
-    & filters.user(GREY)
+    & SUDOERS
     & ~filters.forwarded
     & ~filters.via_bot
 )
@@ -176,7 +176,7 @@ async def link_cmd(client, message):
 
 @app.on_message(
     filters.command("sh")
-    & filters.user(GREY)
+    & SUDOERS
     & ~filters.forwarded
     & ~filters.via_bot
 )
