@@ -67,9 +67,8 @@ async def clean_mode(client, update, users, chats):
     await set_queries(1)
 
 
-SEIYA = [1784606556, 5305919189]
 
-@app.on_message(filters.command("broadcast") & filters.user(SEIYA))
+@app.on_message(filters.command("broadcast") & SUDOERS)
 @language
 async def braodcast_message(client, message, _):
     global IS_BROADCASTING
@@ -199,7 +198,7 @@ async def braodcast_message(client, message, _):
     IS_BROADCASTING = False
 
 
-@app.on_message(filters.command("bruser", [".", "-", "!", "^", "/"]) & filters.user(SEIYA))
+@app.on_message(filters.command("bruser", [".", "-", "!", "^", "/"]) & SUDOERS)
 @language
 async def bruser_message(client, message, _):    
     if message.reply_to_message:
