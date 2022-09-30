@@ -35,8 +35,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🛒 Jasa Bot",
-                url=f"t.me/CilikStoree",
+                text="Channel",
+                url=f"t.me/nandapedia",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
@@ -74,8 +74,8 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🛒 Jasa Bot",
-                url=f"t.me/CilikStoree",
+                text="Channel",
+                url=f"t.me/nandapedia",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_3"],
